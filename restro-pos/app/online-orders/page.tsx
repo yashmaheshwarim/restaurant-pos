@@ -66,9 +66,9 @@ export default function OnlineOrders() {
                   <TableCell>₹{order.total.toFixed(2)}</TableCell>
                   <TableCell>
                     <Badge
-                      variant={
-                        order.status === "New" ? "default" : order.status === "Preparing" ? "secondary" : "success"
-                      }
+                      variant=
+                        {order.status === "New" ? "default" : order.status === "Preparing" ? "secondary" : "outline"} 
+                      
                     >
                       {order.status}
                     </Badge>
