@@ -23,20 +23,20 @@ export default function Reports() {
     if (!isAuthenticated) {
       router.push("/")
     } else {
-      // Load sales data from localStorage
-      const salesData = JSON.parse(localStorage.getItem("salesData") || "{}")
+      const salesData = JSON.parse(localStorage.getItem("salesData") || "{}") as SalesDataType
       const currentDate = new Date().toISOString().split("T")[0]
       const currentMonth = currentDate.substring(0, 7)
-
+  
       const dailyTotal = salesData[currentDate]?.daily || 0
       const monthlyTotal = Object.entries(salesData)
         .filter(([date]) => date.startsWith(currentMonth))
-        .reduce((sum, [, data]) => sum + data.daily, 0)
-
+        .reduce((sum, [, data]) => sum + (data as { daily: number }).daily, 0)
+  
       setDailySales(dailyTotal)
       setMonthlySales(monthlyTotal)
     }
   }, [isAuthenticated, router])
+  
 
   const generateReportData = () => {
     const salesData = JSON.parse(localStorage.getItem("salesData") || "{}")
