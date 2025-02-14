@@ -1,0 +1,21 @@
+export const menuItems = [
+  { id: 1, name: "Sev Tameta", price: 100, category: "sabji" },
+  { id: 2, name: "Rotli", price: 10, category: "roti" },
+  { id: 3, name: "Sev Dungali", price: 100, category: "sabji" },
+  { id: 4, name: "Bajarari Rotla", price: 40, category: "roti" },
+  { id: 5, name: "Sev Masala", price: 100, category: "sabji" },
+  { id: 6, name: "Fry Parotha", price: 20, category: "roti" },
+  { id: 7, name: "Rajwadi Dhokdi", price: 100, category: "sabji" },
+  { id: 8, name: "Khichadi", price: 60, category: "rice" },
+  { id: 9, name: "Bhindi Masala", price: 100, category: "sabji" },
+  { id: 10, name: "Plain Rice", price: 60, category: "rice" },
+  { id: 11, name: "Rasawada Bataka", price: 100, category: "sabji" },
+  { id: 12, name: "Kadhi-Khichadi", price: 100, category: "rice" },
+  { id: 13, name: "Kathol", price: 100, category: "sabji" },
+  { id: 14, name: "Gujarati Dalbhat", price: 100, category: "rice" },
+  { id: 15, name: "Lasaniya Bateka", price: 130, category: "sabji" },
+  { id: 16, name: "Masala Khichadi", price: 120, category: "rice" },
+  { id: 17, name: "Vagharelo Rotlo", price: 130, category: "roti" },
+  { id: 18, name: "Kaju Ganthiya", price: 150, category: "sabji" },
+]
+
